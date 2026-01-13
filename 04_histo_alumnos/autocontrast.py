@@ -1,13 +1,16 @@
-
-
 import matplotlib.pyplot as plt
 import argparse
 import cv2
 import numpy as np
 
 ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--image", required = True, help = "Path to the input image")
-ap.add_argument("-o", "--output", required = False, help = "Name to the output image")
+ap.add_argument(
+    "-i",
+    "--image",
+    default="/Users/svo/Documents/qoop.Ai_GitHub/OpenCV/04_histo_alumnos/input_low.jpg",
+    help="Path to the input image"
+)
+ap.add_argument("-o", "--output", required=False, help="Name to the output image")
 arg = ap.parse_args()
 args = vars(arg)
 
@@ -87,4 +90,3 @@ else:
 ax4.set_title('Autocontrast Histogram')
 
 plt.show()
-
