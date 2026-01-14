@@ -50,14 +50,20 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 4. Verify input image
+### 4. File detection
+
+```
+cd Actividad1
+```
+
+### 5. Verify input image
 
 ```
 seg_platos.py
 plates.png
 ```
 
-### 5. Run the script
+### 6. Run the script
 
 ```
 python seg_platos.py
